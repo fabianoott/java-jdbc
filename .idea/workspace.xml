@@ -7,6 +7,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="241" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -14,6 +34,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1YzETReMHOenFW20pTtjJtdMkTc" />
   <component name="ProjectViewState">
@@ -23,10 +46,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlite-jdbc-3.30.1.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="Programa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -48,6 +74,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7ef297d6-c860-489e-b924-c034c38fcc0c" name="Default Changelist" comment="" />
@@ -55,10 +84,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583937029951</updated>
+      <workItem from="1583973131644" duration="3658000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="387" y="31" key="#Project_Structure" timestamp="1585270990829">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1583973310098" />
+    <state x="387" y="31" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1585270990829" />
     <state x="555" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583938822585">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -67,30 +105,66 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860/1600.0.1600.900@0.0.1600.860" timestamp="1583945622780" />
+    <state x="664" y="272" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1585878328675">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="272" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585878328675" />
     <state x="506" y="171" key="FileChooserDialogImpl" timestamp="1583937339605">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="506" y="171" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1600.900@0.0.1600.860" timestamp="1583937339605" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1583947799432">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1877" height="882" key="GridCell.Tab.0.bottom" timestamp="1585880841819">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583973356611" />
     <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1600.900@0.0.1600.860" timestamp="1583947799432" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1583947799432">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1877" height="882" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585880841819" />
+    <state width="1877" height="882" key="GridCell.Tab.0.center" timestamp="1585880841819">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583973356607" />
     <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1600.900@0.0.1600.860" timestamp="1583947799432" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1583947799432">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1877" height="882" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585880841819" />
+    <state width="1877" height="882" key="GridCell.Tab.0.left" timestamp="1585880841819">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583973356607" />
     <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1600.900@0.0.1600.860" timestamp="1583947799432" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1583947799432">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1877" height="882" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585880841819" />
+    <state width="1877" height="882" key="GridCell.Tab.0.right" timestamp="1585880841819">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583973356611" />
     <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1600.900@0.0.1600.860" timestamp="1583947799432" />
+    <state width="1877" height="882" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585880841819" />
+    <state width="1877" height="330" key="GridCell.Tab.1.bottom" timestamp="1585880841815">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585880841815" />
+    <state width="1877" height="330" key="GridCell.Tab.1.center" timestamp="1585880841815">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585880841815" />
+    <state width="1877" height="330" key="GridCell.Tab.1.left" timestamp="1585880841815">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585880841815" />
+    <state width="1877" height="330" key="GridCell.Tab.1.right" timestamp="1585880841815">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="330" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585880841815" />
     <state x="280" y="4" key="SettingsEditor" timestamp="1583937371589">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="280" y="4" key="SettingsEditor/0.0.1600.860/1600.0.1600.900@0.0.1600.860" timestamp="1583937371589" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1585875274119">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1585875274119" />
+    <state x="802" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1585870160546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="802" y="382" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585870160546" />
     <state x="447" y="44" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583943549929">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -99,9 +173,16 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="456" y="195" key="run.anything.popup/0.0.1600.860/1600.0.1600.900@0.0.1600.860" timestamp="1583938106704" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1583938442228">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="555" y="217" width="807" height="820" key="search.everywhere.popup" timestamp="1585879303235">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="395" y="152" width="574" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583974612430" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/1600.0.1600.900@0.0.1600.860" timestamp="1583938442228" />
+    <state x="555" y="217" width="807" height="820" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585879303235" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_jdbc_master$Programa.ic" NAME="Programa Coverage Results" MODIFIED="1585874605043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.github.mayconmoraesdm.main.*</FILTER>
+    </SUITE>
   </component>
 </project>

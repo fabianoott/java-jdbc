@@ -2,6 +2,7 @@ package com.github.mayconmoraesdm.entidades;
 
 import com.github.mayconmoraesdm.fabrica.FabricaJDBC;
 
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +13,25 @@ public class Contato extends Entidade{
     private String telefone;
     private String celular;
     private String email;
+    private String telefone2;
+    private String celular2;
 
-    public Integer getId() {
+
+    public String getTelefone2() { return telefone2; }
+
+    public void setTelefone2(String telefone2) {
+        this.telefone2 = telefone2;
+    }
+
+    public String getCelular2() {
+        return celular2;
+    }
+
+    public void setCelular2(String celular2) {
+        this.celular2 = celular2;
+    }
+
+    public int getId() {
         return id;
     }
 
@@ -70,6 +88,22 @@ public class Contato extends Entidade{
             setTelefone(contatoBd.getTelefone());
             setCelular(contatoBd.getCelular());
             setEmail(contatoBd.getEmail());
+            setCelular2(contatoBd.getCelular2());
+            setTelefone2(contatoBd.getTelefone2());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public Contato(String nome) {
+        try {
+            Contato contatoBd = this.buscaPorNome(nome);
+            setNome(nome);
+            setId(contatoBd.getId());
+            setTelefone(contatoBd.getTelefone());
+            setCelular(contatoBd.getCelular());
+            setEmail(contatoBd.getEmail());
+            setCelular2(contatoBd.getCelular2());
+            setTelefone2(contatoBd.getTelefone2());
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -94,7 +128,9 @@ public class Contato extends Entidade{
                 c.setTelefone(rs.getString("telefone"));
                 c.setCelular(rs.getString("celular"));
                 c.setEmail(rs.getString("email"));
-                contatos.add(c);
+                c.setTelefone2(rs.getString("telefone2"));
+                c.setCelular2(rs.getString("celular2"));
+                                contatos.add(c);
             }
         }
         return contatos;
@@ -115,6 +151,31 @@ public class Contato extends Entidade{
                 c.setTelefone(rs.getString("telefone"));
                 c.setCelular(rs.getString("celular"));
                 c.setEmail(rs.getString("email"));
+                c.setTelefone2(rs.getString("telefone2"));
+                c.setCelular2(rs.getString("celular2"));
+                return c;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public Contato buscaPorNome(String nome) throws SQLException {
+        try (Connection conn = FabricaJDBC.criaConn()) {
+            String sql = "SELECT * FROM contatos where nome = ?;";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1, nome);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            while (rs.next()) {
+                Contato c = new Contato();
+                c.setId(rs.getInt("id"));
+                c.setNome(rs.getString("nome"));
+                c.setTelefone(rs.getString("telefone"));
+                c.setCelular(rs.getString("celular"));
+                c.setEmail(rs.getString("email"));
+                c.setTelefone2(rs.getString("telefone2"));
+                c.setCelular2(rs.getString("celular2"));
                 return c;
             }
         }
@@ -124,12 +185,15 @@ public class Contato extends Entidade{
     @Override
     public Boolean insere() throws SQLException {
         try (Connection conn = FabricaJDBC.criaConn()) {
-            String sql = "INSERT INTO contatos(nome, telefone, celular, email) VALUES (?,?,?,?);";
+            String sql = "INSERT INTO contatos(nome, telefone, celular, email, telefone2, celular2) VALUES (?,?,?,?,?,?);";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, getNome());
             preparedStatement.setString(2, getTelefone());
             preparedStatement.setString(3, getCelular());
             preparedStatement.setString(4, getEmail());
+            preparedStatement.setString(5, getTelefone2());
+            preparedStatement.setString(6, getCelular2());
+
             preparedStatement.execute();
             return true;
         }
@@ -142,14 +206,18 @@ public class Contato extends Entidade{
                          "SET nome = ?," +
                          "telefone = ?," +
                          "celular = ?," +
-                         "email = ?" +
+                         "email = ?," +
+                         "celular2 = ?," +
+                         "telefone2 = ?" +
                          "WHERE id = ?;";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, getNome());
             preparedStatement.setString(2, getTelefone());
             preparedStatement.setString(3, getCelular());
             preparedStatement.setString(4, getEmail());
-            preparedStatement.setInt( 5, getId());
+            preparedStatement.setString(5, getCelular2());
+            preparedStatement.setString(6, getTelefone2());
+            preparedStatement.setInt( 7, getId());
             preparedStatement.execute();
             return true;
         }
@@ -166,5 +234,7 @@ public class Contato extends Entidade{
             return true;
         }
     }
-}
+
+    }
+
 
